@@ -5,6 +5,7 @@ const IdInput = ({ getMeetingId }) => {
 
   return (
     <div>
+      <p>Enter livestream Id to access a livestream</p>
       <input type='text' onChange={(e) => setId(e.target.value)} />
       <button
         type='button'
