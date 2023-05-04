@@ -37,15 +37,7 @@ const FirebaseVideoView = () => {
       });
   }, []);
   return (
-    <div>
-      {videos.length === 0 ? (
-        <>There are no videos to display</>
-      ) : (
-        videos.map((video, i) => {
-          return <Video key={i} url={video} />;
-        })
-      )}
-    </div>
+    <div>{videos.length === 0 ? 'loading' : <Video videos={videos} />}</div>
   );
 };
 

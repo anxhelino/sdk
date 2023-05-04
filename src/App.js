@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Admin from './pages/Admin';
 import Viewer from './pages/Viewer';
+import './App.css';
 const App = () => {
   return (
     <BrowserRouter>
